@@ -1,0 +1,290 @@
+
+*** Running vivado
+    with args -log auction_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source auction_top.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sat Mar 21 19:16:50 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source auction_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 534.594 ; gain = 220.152
+Command: synth_design -top auction_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17272
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1285.395 ; gain = 541.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'auction_top' [C:/Users/NBODT/Desktop/project_final/project_final.srcs/sources_1/new/auction_top.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'edge_detect' [C:/Users/NBODT/Desktop/project_final/project_final.srcs/sources_1/new/edge_detect.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'edge_detect' (0#1) [C:/Users/NBODT/Desktop/project_final/project_final.srcs/sources_1/new/edge_detect.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'auction_fsm' [C:/Users/NBODT/Desktop/project_final/project_final.srcs/sources_1/new/auction_fsm.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'auction_fsm' (0#1) [C:/Users/NBODT/Desktop/project_final/project_final.srcs/sources_1/new/auction_fsm.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'display_mux' [C:/Users/NBODT/Desktop/project_final/project_final.srcs/sources_1/new/display_mux.vhd:32]
+INFO: [Synth 8-226] default block is never used [C:/Users/NBODT/Desktop/project_final/project_final.srcs/sources_1/new/auction_pkg.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'display_mux' (0#1) [C:/Users/NBODT/Desktop/project_final/project_final.srcs/sources_1/new/display_mux.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'led_ctrl' [C:/Users/NBODT/Desktop/project_final/project_final.srcs/sources_1/new/led_ctrl.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'led_ctrl' (0#1) [C:/Users/NBODT/Desktop/project_final/project_final.srcs/sources_1/new/led_ctrl.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'auction_top' (0#1) [C:/Users/NBODT/Desktop/project_final/project_final.srcs/sources_1/new/auction_top.vhd:25]
+WARNING: [Synth 8-7129] Port SW[15] in module display_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[14] in module display_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[13] in module display_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[12] in module display_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module display_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[10] in module display_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[9] in module display_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[8] in module display_mux is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1408.773 ; gain = 664.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1408.773 ; gain = 664.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1408.773 ; gain = 664.730
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1408.773 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/NBODT/Desktop/project_final/project_final.srcs/constrs_1/new/xdc_final.xdc]
+Finished Parsing XDC File [C:/Users/NBODT/Desktop/project_final/project_final.srcs/constrs_1/new/xdc_final.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/NBODT/Desktop/project_final/project_final.srcs/constrs_1/new/xdc_final.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/auction_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/auction_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1490.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1490.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1490.535 ; gain = 746.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1490.535 ; gain = 746.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1490.535 ; gain = 746.492
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'auction_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+               set_price |                               01 |                               01
+                 bidding |                               10 |                               10
+             show_result |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'auction_fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1490.535 ; gain = 746.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 16    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   8 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   4 Input    6 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 8     
+	   2 Input    4 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 16    
+	   6 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design auction_top has port LED[15] driven by constant 0
+WARNING: [Synth 8-3917] design auction_top has port LED[14] driven by constant 0
+WARNING: [Synth 8-3917] design auction_top has port LED[13] driven by constant 0
+WARNING: [Synth 8-3917] design auction_top has port LED[12] driven by constant 0
+WARNING: [Synth 8-3917] design auction_top has port LED[11] driven by constant 0
+WARNING: [Synth 8-3917] design auction_top has port LED[10] driven by constant 0
+WARNING: [Synth 8-3917] design auction_top has port LED[9] driven by constant 0
+WARNING: [Synth 8-3917] design auction_top has port LED[8] driven by constant 0
+WARNING: [Synth 8-3917] design auction_top has port LED[3] driven by constant 0
+WARNING: [Synth 8-7129] Port SW[15] in module display_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[14] in module display_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[13] in module display_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[12] in module display_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module display_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[10] in module display_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[9] in module display_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[8] in module display_mux is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1513.039 ; gain = 768.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 1617.359 ; gain = 873.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 1692.770 ; gain = 948.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 1692.770 ; gain = 948.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 1881.895 ; gain = 1137.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 1881.895 ; gain = 1137.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1881.895 ; gain = 1137.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1881.895 ; gain = 1137.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1881.895 ; gain = 1137.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1881.895 ; gain = 1137.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    22|
+|3     |LUT1   |     4|
+|4     |LUT2   |    40|
+|5     |LUT3   |    14|
+|6     |LUT4   |    39|
+|7     |LUT5   |    29|
+|8     |LUT6   |   118|
+|9     |MUXF7  |     3|
+|10    |FDRE   |   166|
+|11    |FDSE   |     7|
+|12    |IBUF   |    21|
+|13    |OBUF   |    32|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1881.895 ; gain = 1137.852
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:34 . Memory (MB): peak = 1881.895 ; gain = 1056.090
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1881.895 ; gain = 1137.852
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1891.098 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1894.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8a2eed6f
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 1894.738 ; gain = 1360.145
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1894.738 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/NBODT/Desktop/project_final/project_final.runs/synth_1/auction_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file auction_top_utilization_synth.rpt -pb auction_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 21 19:17:43 2026...
